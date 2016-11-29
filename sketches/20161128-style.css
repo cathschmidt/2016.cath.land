@@ -48,7 +48,7 @@ ul li {
 h2 {
 	font-size: 1.75em;
 	line-height: 1.2em;
-	font-family: "Yatra", sans-serif;
+	font-family: "Yatra One", sans-serif;
 	padding-bottom: .5em;
 }
 
@@ -91,7 +91,7 @@ span.date {
 	position: fixed;
 	background-color: yellow;
 	color: red;
-	font-family: "Yatra", sans serif;
+	font-family: "Yatra One", sans serif;
 	font-size: 1.25em;
 	line-height: 1.5em;
 	padding: 2em;
