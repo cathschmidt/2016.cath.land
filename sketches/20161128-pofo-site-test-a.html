@@ -1,0 +1,208 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>catherine leigh schmidt</title>
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<link rel="stylesheet" href="20161128-style.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script>
+	$(document).ready(function(){ 
+		// close button for post-its
+		$(".ex").click(function(){
+			$(this).parent().fadeOut(200);
+		});
+
+		// modal on click of pofo images
+		$("article").click(function(){
+			//selected caption
+			var caption = $("." + $(this).attr("alt"));
+			//both caption, screen, and ex button fade in
+			$(".screen").fadeIn(400);
+			caption.fadeIn(400);
+			$(".modal-ex").fadeIn(400);
+		});
+
+		//click modal ex to get out of caption
+		$(".modal-ex").click(function(){
+			$(".caption").fadeOut(200);
+			$(this).fadeOut(200);
+			$(".screen").fadeOut(400);
+		});
+		// or click screen to get out of caption
+		$(".screen").click(function(){
+			$(".modal-ex").fadeOut(200);
+			$(".caption").fadeOut(200);
+			$(this).fadeOut(400);
+		});
+
+	});
+</script>
+
+</head>
+
+<body>
+<!--
+(((＼（＠v＠）／)))
+POST-ITS YEE
+-->
+<div class="intro postit">
+	<span class="ex">×</span>
+	Catherine Leigh Schmidt is a designer who makes fonts &amp; webistes, etc. She got a BFA in Graphic Design from RISD in 2014.
+</div>
+<div class="info postit">
+	<span class="ex">×</span>
+	<ul class="media">
+		<li>email</li>
+		<li>twitter</li>
+		<li>github</li>
+		<li>aren.na</li>
+		<li>linkedin</li>
+		<li>resumé</li>
+	</ul>
+	<ul class="links">
+		<li><a href="mailto:hi@cath.land">hi@cath.land</a></li>
+		<li><a href="http://twitter.com/cathschmidt">@cathschmidt</a>
+		<li><a href="http://github.com/cathschmidt">cathschmidt</a></li>
+		<li><a href="http://are.na/catherine-leigh-schmidt">catherine leigh schmidt</a></li>
+		<li><a href="http://linkedin.com/in/cathschmidt">cathschmidt</a></li>
+		<li><a href="resume.pdf">PDF</a> (cuter than linkedin)</li>
+	</ul>
+</div>
+
+<div class="postit imlooking blink rotate">
+	<span class="ex">×</span>
+	I'm looking for work ! ! 
+</div>
+
+<div class="postit haha">
+	<span class="ex">×</span>
+	I PROMISE YOU I KNOW HOW TO SET TYPE 
+</div>
+
+<div class="postit seriously">
+	<span class="ex">×</span>
+	<a href="mailto:hi@cath.land">email me</a> for a portfolio that makes sense
+</div>
+
+<!--
+( ͡☉⁄ ⁄ ͜⁄ ͜ʖ̫⁄ ⁄ ͡☉)
+WORK WORK WORK WORK WORK WORK
+-->
+<div class="work">
+	<article alt="risd">
+		<img src="work/campusmap2.png">
+	</article>
+
+	<article alt="yatra">
+		<img src="work/yatra-tha.png">
+	</article>
+
+	<article alt="risd">
+		<img src="work/phonebook.png" class="smaller">
+	</article>
+
+	<article alt="bindery">
+		<img src="work/bindery.gif" class="shadow">
+	</article>
+
+	<article alt="everlane">
+		<img src="work/everlane.png" class="small shadow">
+	</article>
+
+	<article alt="yatra">
+		<img src="work/stealthisfont.gif">
+	</article>
+
+	<article alt="risd">
+		<img src="work/maharam.png">
+	</article>
+
+	<article alt="twodivs">
+		<img src="work/twodivs.gif" class="shadow">
+	</article>
+
+	<article alt="acp">
+		<img src="work/acp2.png">
+	</article>
+
+	<article alt="fellowship">
+		<img src="work/fellowship.jpg" class="shadow small">
+	</article>
+
+	<article alt="yatra">
+		<img src="work/yatra-specimen-site.png" class="shadow">
+	</article>
+
+	<article alt="yatra">
+		<img src="work/yatra-horn.png">
+	</article>
+
+	<article alt="soylent">
+		<img src="work/soylent.png">
+	</article>
+
+	<article alt="risd">
+		<img src="work/risdsign.png" class="small">
+	</article>
+
+	<article alt="steam">
+		<img src="work/steam.png">
+	</article>
+
+	<article alt="htmlout">
+		<img src="work/htmloutput.png">
+	</article>
+
+	<article alt="chini">
+		<img src="work/chini.png">
+	</article>
+
+	<article alt="risd">
+		<img src="work/color2.png">
+	</article>
+
+<!-- COLOPHON LMAO 
+v(｡･ω･｡)ｨｪｨ♪
+-->
+	<div class="colophon">
+		<a class="box" href="mailto:hi@cath.land">email me</a>
+	</div>
+</div>
+
+
+<!--
+☆*: .｡. o(≧▽≦)o .｡.:*☆
+CAPTIONS
+-->
+<div class="screen"></div>
+<span class="modal-ex">×</span>
+
+
+<div class="caption yatra small-mode">
+	<h2>Yatra <span class="date">2016</span></h2>
+
+	<p>Yatra is a Devanagari and Latin display font based on the hand-painted signage of the Mumbai Railways. It's available for free on <a href="https://fonts.google.com/specimen/Yatra+One">Google Fonts</a>. Yatra was the result of research from a Fulbright scholarship in India.</p>
+
+	<p><a href="http://cath.land/yatra-one/specimen">Check out the specimen</a></p>
+
+	<img src="work/yatra/yatra-charset.png">
+
+	<p>Yatra mimics the high-contrast, modulated, chunky style of Mumbai rail sign painting. Like the rail signs, Yatra includes basic Marathi support. Yatra aims to illustrate how typography for civic contexts, rather than aiming for simplicity and universality, can instead retain local and historic qualities.</p>
+
+	<p>Yatra has a pretty complete Devanagari glyphset and supports Adobe Latin 3 with a few fun extras. A few Marathi alternates are also included.</p>
+
+</div>
+
+<div class="caption soylent small-mode">
+	<h2>Soylent Brand <span class="date">2013</span></h2>
+	<p>Before Soylent was branded by OKFocus, I made a tongue-in-cheek brand identity for a school project 😉</p>
+
+	<img src="work/soylent/soylent2.jpg">
+	<img src="work/soylent/soylent3.jpg">
+
+</div>
+
+
+
+</body></html>

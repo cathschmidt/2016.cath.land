@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Karla", Helvetica, serif;
+	color: #454a4e; /* light gray text color */
+	font-size: 1.5vw; /* font size tied to viewport width */
+	line-height: 1.75em; /* ems for everything else, so everything tied to vw */
+	padding: 2em;
+	overflow-x:hidden;
+	/* background-color: mistyrose; */
+	background: -webkit-linear-gradient(mistyrose, pink, lightpink, coral) fixed;
+}
+
+
+/* TYPE */
+a {
+	color: black;
+	text-decoration: none;
+	padding-bottom: .1em;
+	border-bottom: .1em solid black;
+} a:hover{
+	border-bottom: 0;
+	background: black;
+	color: white;
+}
+
+p, ol li, h1 {
+	padding-bottom: 1em;
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: normal;
+}
+
+ul li {
+	font-size: 1em;
+	padding-bottom: .5em;
+	list-style-type: none;
+} ul {
+	float: left;
+}
+
+/* IMAGES LAYOUT */
+
+.work {
+	clear:both;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+} .work article { /* grid of images */
+	float: left;
+    width: 45vw;
+    margin: 2vw;
+    /* max-height: 200px; */
+    transition: all .25s;
+} article img {
+	width: 100%;
+	height: auto;
+} article:hover {
+	transform: scale(.98);
+	cursor: pointer;
+} 
+
+.shadow { /* adding to square stuff */
+	box-shadow: .25em .25em 0px rgba(0,0,0,.5);
+}
+
+/* POST-ITS */
+.postit {
+	position: fixed;
+	background-color: yellow;
+	color: red;
+	font-family: "Yatra", sans serif;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	padding: 2em;
+	box-shadow: .25em .25em 0px rgba(255,0,0,.5);
+} .postit a{
+	color: red;
+	border-bottom:1px solid red;
+} .postit a:hover {
+	color: yellow;
+}
+
+span.ex{ /* x out button */
+	line-height: 0;
+	display: block;
+	position: relative;
+	text-align: right;
+	top: -.75em;
+	right:-1em;
+} span.ex:hover {
+	color: lightpink;
+	cursor: pointer;
+}
+
+.intro { /* micro bio post-it */
+	width: 16em;
+	top:1vw;
+	left:17vw;
+	z-index: 2;
+}
+
+.info { /* contact info post-it */
+	width: 19em;
+	top: 18vw;
+	left: 40vw;
+	z-index: 1;
+} ul.media { /* on contact post-it */
+	width: 11vw;
+} 
+
+.imlooking { /* looking for work post-it */
+	background-color: magenta;
+	text-align: center;
+	color: white;
+	bottom: 1vw;
+	left: 1vw;
+	height: 20em;
+	width: 20em;
+	z-index: 3;
+	display: none;
+}
+
+/* MODAL STUFF */
+
+.modal-ex { /* x button on modals */
+	display: none;
+	position: fixed;
+	font-size: 2em;
+	color: white;
+	top: .5em;
+	right: 3.5em;
+	z-index: 105;
+} .modal-ex:hover {
+	color: pink;
+	cursor: pointer;
+}
+
+div.screen { /* dims background */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100vw;
+	height: 100vw;
+	display: none;
+	background-color: rgba(0,0,0,.5);
+}
+
+.caption { /* modal box */
+	display: none;
+	position: fixed;
+	width: 70vw;
+	height: 70vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 3em;
+	background-color: white;
+	z-index: 100;
+	top: 5vw;
+	left: 5vw;
+	box-shadow: .25em .25em 0px rgba(0,0,0,.5);
+} .caption img {
+	width: 100%;
+	height: auto;
+} .caption::-webkit-scrollbar-track { /* scrollbar styling lol */
+	background-color: white;
+} .caption::-webkit-scrollbar {
+	width: .5em;
+	background-color: white;
+} .caption::-webkit-scrollbar-thumb {
+	background-color: yellow;
+}
+
