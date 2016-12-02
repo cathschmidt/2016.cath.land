@@ -4,7 +4,7 @@
 <title>catherine leigh schmidt</title>
 <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-<link rel="stylesheet" href="20161201-style.css">
+<link rel="stylesheet" href="20161202-style.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
 
@@ -13,13 +13,17 @@
 		//draggable stuff
 		var $draggable = $('.draggable').draggabilly();
 
-		//make dragged thing on top
+		//make dragged thing, clicked thing on top
 		var zcount = 40; //set z-index
 		$draggable.on( 'dragStart', function(){
 			$(this).css("z-index", zcount);
 			zcount = zcount + 1; //increment z-index so dragged thing is always on top
 		});
 
+		$(".draggable").click(function(){
+			$(this).css("z-index", zcount);
+			zcount = zcount + 1; //increment z-index so dragged thing is always on top
+		});
 		// close button for post-its
 		$(".ex").click(function(){
 			$(this).parent().fadeOut(200);
