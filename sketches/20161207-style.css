@@ -347,21 +347,11 @@ div.more-info{
  .top { /* top button, taken from modal-ex */
 	display: none;
 	position: fixed;
-	font-size: 2em;
-	line-height: .9em;
-	border-radius: 50%;
-	height: .9em;
-	padding:.4em;
-	background-color: rgb(0,112,255);
 	color: yellow;
-	bottom: 2vh;
+	bottom: 3vh;
 	left: 2vw;
 	z-index: 40;
-} .top:hover {
-	color: rgb(0,112,255);
-	background-color: yellow;
-	cursor: pointer;
-}
+ }
  /* MOBILE !  ! */
 
 @media screen /* iPhone 5 fuck me */
