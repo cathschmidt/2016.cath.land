@@ -8,7 +8,6 @@ body {
 	color: #454a4e; /* light gray text color */
 	font-size: 1.5vw; /* font size tied to viewport width */
 	line-height: 1.75em; /* ems for everything else, so everything tied to vw */
-	padding: 2em;
 	overflow-x:hidden;
 	/* background-color: mistyrose; */
 	background: -webkit-linear-gradient(mistyrose, pink, lightpink, coral) fixed;
@@ -73,11 +72,9 @@ span.date {
 
 .work {
 	clear:both;
-	width: 100vw;
+	width: 98vw;
+	margin: auto;
 	margin-top: 80vh;
-	position: absolute;
-	top: 0;
-	left: 0;
 	display: block;
 } .work article { /* grid of images */
 	text-align: center;
@@ -238,7 +235,7 @@ div.screen { /* dims background */
 	left: 0;
 	z-index: 50;
 	width: 100vw;
-	height: 100vw;
+	height: 100vh;
 	display: none;
 	background-color: rgba(240,255,39,.66); /* yellow */
 }
@@ -334,3 +331,82 @@ div.more-info{
 	animation: rotate 10s linear infinite;
 	-webkit-animation: rotate 10s linear infinite;
  }
+
+ .mobile-info{ /* intro info for mobile */
+ 	display: none; /*hidden until asked for ;) */
+ 	background-color: white;
+ 	width: 75vw;
+ 	margin: auto;
+ 	margin-top: 3vw;
+ 	padding: 2em;
+ 	box-shadow: .25em .25em 0px rgba(255,0,0,.5);
+ 	clear: both;
+ }
+
+ .top { /* top button, taken from modal-ex */
+	display: none;
+	position: fixed;
+	font-size: 2em;
+	line-height: .9em;
+	border-radius: 50%;
+	height: .9em;
+	padding:.4em;
+	background-color: rgb(0,112,255);
+	color: yellow;
+	bottom: 2vh;
+	left: 2vw;
+	z-index: 40;
+} .top:hover {
+	color: rgb(0,112,255);
+	background-color: yellow;
+	cursor: pointer;
+}
+ /* MOBILE !  ! */
+
+@media only screen 
+  and (max-width: 750px)
+  {
+
+  	/* Type */
+
+  	body {
+  		font-size: 3.75vw;
+  	}
+
+  	.postit { /* bye post-its */
+  		display: none;
+  	} .more-info { /* bye info button */
+  		display: none;
+  	} 
+
+  	.mobile-info { /* display intro info */
+  		display: block;
+  	} ul.media {
+  		width: 22vw; /* column adjustment */
+  	}
+  	.top { /* scroll top button */
+  	}
+
+  	/* Single-Column Work */
+  	.work {
+  		margin-top: 5vw; /* space now occupied by
+  							.mobile-info */
+  	}
+	.work article { /* grid of images */
+		float: inherit;
+	    width: 90vw;
+	    margin: 2vw;
+	    padding: 1vw;
+	} 
+
+	/* Caption */
+
+	.caption {
+		padding: 2em;
+		width: 75vw;
+		left: 5vw;
+		max-height: 71vh;
+	}
+
+}
+
