@@ -363,8 +363,10 @@ div.more-info{
 }
  /* MOBILE !  ! */
 
-@media only screen 
+@media screen 
   and (max-width: 750px)
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
   {
 
   	/* Type */
