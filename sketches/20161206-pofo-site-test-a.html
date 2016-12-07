@@ -9,15 +9,16 @@
 <script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script>
 
 <script>
-	$(document).ready(function(){ 
+	$(document).ready(function(){
+
 		//scroll-top button for mobile 
 		$(document).scroll(function(){
 			var scrollTop = $(document).scrollTop();
 			var work = $(".work").offset().top;
-		
-			var width = $(document).width();
+			//use css media query to check
+			var width == $('.mobile-info').is(':visible');
 			
-			if ((scrollTop > work) && (width < 750)) {
+			if ((scrollTop > work) && (width == true)) {
 				$(".top").fadeIn(400);
 				console.log('Hi');
 			} else {
@@ -146,7 +147,7 @@ INFO FOR MOBILE OTHERWISE HIDDEN
 -->
 <div class="top">☝</div>
 <div class="mobile-info">
-	<p>Catherine Leigh Schmidt is a designer who makes fonts, webistes, &amp; printed stuff. She got a BFA in Graphic Design from RISD in 2014. She built this website with her bare hands.</p>
+	<p>Catherine Leigh Schmidt is a designer who makes fonts, webistes, &amp; printed stuff. She got a BFA in Graphic Design from RISD in 2014. She recommends you look at this on desktop but so it goes!</p>
 	<div style="clear: both; display: inline-block">
 		<ul class="media">
 			<li>email</li>

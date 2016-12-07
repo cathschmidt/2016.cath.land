@@ -235,12 +235,13 @@ div.screen { /* dims background */
 	left: 0;
 	z-index: 50;
 	width: 100vw;
-	height: 100vh;
+	height: 110vh;
 	display: none;
 	background-color: rgba(240,255,39,.66); /* yellow */
 }
 
 .caption { /* modal box */
+	font-weight: normal;
 	display: none;
 	position: fixed;
 	overflow-y: scroll;
