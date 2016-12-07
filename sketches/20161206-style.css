@@ -363,7 +363,7 @@ div.more-info{
 }
  /* MOBILE !  ! */
 
-@media screen 
+@media screen /* iPhone 5 fuck me */
   and (min-device-width: 320px)
   and (max-device-width: 568px)
   {
@@ -411,3 +411,196 @@ div.more-info{
 
 }
 
+@media screen /* iPhone 6 kill me */
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+
+  	/* Type */
+
+  	body {
+  		font-size: 3.75vw;
+  	}
+
+  	.postit { /* bye post-its */
+  		display: none;
+  	} .more-info { /* bye info button */
+  		display: none;
+  	} 
+
+  	.mobile-info { /* display intro info */
+  		display: block;
+  	} ul.media {
+  		width: 22vw; /* column adjustment */
+  	}
+  	.top { /* scroll top button */
+  	}
+
+  	/* Single-Column Work */
+  	.work {
+  		margin-top: 5vw; /* space now occupied by
+  							.mobile-info */
+  	}
+	.work article { /* grid of images */
+		float: inherit;
+	    width: 90vw;
+	    margin: 2vw;
+	    padding: 1vw;
+	} 
+
+	/* Caption */
+
+	.caption {
+		padding: 2em;
+		width: 75vw;
+		left: 5vw;
+		max-height: 71vh;
+	}
+
+}
+
+@media screen /* iPhone 6+ kill me */
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  {
+
+  	/* Type */
+
+  	body {
+  		font-size: 3.75vw;
+  	}
+
+  	.postit { /* bye post-its */
+  		display: none;
+  	} .more-info { /* bye info button */
+  		display: none;
+  	} 
+
+  	.mobile-info { /* display intro info */
+  		display: block;
+  	} ul.media {
+  		width: 22vw; /* column adjustment */
+  	}
+  	.top { /* scroll top button */
+  	}
+
+  	/* Single-Column Work */
+  	.work {
+  		margin-top: 5vw; /* space now occupied by
+  							.mobile-info */
+  	}
+	.work article { /* grid of images */
+		float: inherit;
+	    width: 90vw;
+	    margin: 2vw;
+	    padding: 1vw;
+	} 
+
+	/* Caption */
+
+	.caption {
+		padding: 2em;
+		width: 75vw;
+		left: 5vw;
+		max-height: 71vh;
+	}
+
+}
+
+@media screen /* other stuff */
+  and (min-device-width: 320px)
+  and (max-device-width: 640px)
+  {
+
+  	/* Type */
+
+  	body {
+  		font-size: 3.75vw;
+  	}
+
+  	.postit { /* bye post-its */
+  		display: none;
+  	} .more-info { /* bye info button */
+  		display: none;
+  	} 
+
+  	.mobile-info { /* display intro info */
+  		display: block;
+  	} ul.media {
+  		width: 22vw; /* column adjustment */
+  	}
+  	.top { /* scroll top button */
+  	}
+
+  	/* Single-Column Work */
+  	.work {
+  		margin-top: 5vw; /* space now occupied by
+  							.mobile-info */
+  	}
+	.work article { /* grid of images */
+		float: inherit;
+	    width: 90vw;
+	    margin: 2vw;
+	    padding: 1vw;
+	} 
+
+	/* Caption */
+
+	.caption {
+		padding: 2em;
+		width: 75vw;
+		left: 5vw;
+		max-height: 71vh;
+	}
+
+}
+
+@media screen /* testing for desktop 
+				 and whatever else */
+  and (max-width: 750)
+  {
+
+  	/* Type */
+
+  	body {
+  		font-size: 3.75vw;
+  	}
+
+  	.postit { /* bye post-its */
+  		display: none;
+  	} .more-info { /* bye info button */
+  		display: none;
+  	} 
+
+  	.mobile-info { /* display intro info */
+  		display: block;
+  	} ul.media {
+  		width: 22vw; /* column adjustment */
+  	}
+  	.top { /* scroll top button */
+  	}
+
+  	/* Single-Column Work */
+  	.work {
+  		margin-top: 5vw; /* space now occupied by
+  							.mobile-info */
+  	}
+	.work article { /* grid of images */
+		float: inherit;
+	    width: 90vw;
+	    margin: 2vw;
+	    padding: 1vw;
+	} 
+
+	/* Caption */
+
+	.caption {
+		padding: 2em;
+		width: 75vw;
+		left: 5vw;
+		max-height: 71vh;
+	}
+
+} 
