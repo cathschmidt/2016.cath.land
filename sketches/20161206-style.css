@@ -369,10 +369,10 @@ div.more-info{
   and (max-device-width: 568px)
   {
 
-  	/* Type */
+/* Type */
 
   	body {
-  		font-size: 3.75vw;
+  		font-size: 4.5vw;
   	}
 
   	.postit { /* bye post-its */
@@ -405,7 +405,7 @@ div.more-info{
 
 	.caption {
 		padding: 2em;
-		width: 75vw;
+		width: 71vw;
 		left: 5vw;
 		max-height: 71vh;
 	}
@@ -418,10 +418,10 @@ div.more-info{
   and (-webkit-min-device-pixel-ratio: 2)
   {
 
-  	/* Type */
+/* Type */
 
   	body {
-  		font-size: 3.75vw;
+  		font-size: 4.5vw;
   	}
 
   	.postit { /* bye post-its */
@@ -454,7 +454,7 @@ div.more-info{
 
 	.caption {
 		padding: 2em;
-		width: 75vw;
+		width: 71vw;
 		left: 5vw;
 		max-height: 71vh;
 	}
@@ -467,10 +467,10 @@ div.more-info{
   and (-webkit-min-device-pixel-ratio: 3)
   {
 
-  	/* Type */
+/* Type */
 
   	body {
-  		font-size: 3.75vw;
+  		font-size: 4.5vw;
   	}
 
   	.postit { /* bye post-its */
@@ -503,7 +503,7 @@ div.more-info{
 
 	.caption {
 		padding: 2em;
-		width: 75vw;
+		width: 71vw;
 		left: 5vw;
 		max-height: 71vh;
 	}
@@ -518,7 +518,7 @@ div.more-info{
   	/* Type */
 
   	body {
-  		font-size: 3.75vw;
+  		font-size: 4.5vw;
   	}
 
   	.postit { /* bye post-its */
@@ -551,7 +551,7 @@ div.more-info{
 
 	.caption {
 		padding: 2em;
-		width: 75vw;
+		width: 71vw;
 		left: 5vw;
 		max-height: 71vh;
 	}
