@@ -358,14 +358,9 @@ div.more-info{
  }
  /* MOBILE !  ! */
 
-@media screen /* iPhone 5 fuck me */
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  {
-
-/* Type */
-
-  	body {
+@media only screen /* smallest */
+	and (max-device-width : 480px) {
+	body {/* pump up the size */
   		font-size: 4.5vw;
   	}
 
@@ -379,8 +374,6 @@ div.more-info{
   		display: block;
   	} ul.media {
   		width: 22vw; /* column adjustment */
-  	}
-  	.top { /* scroll top button */
   	}
 
   	/* Single-Column Work */
@@ -406,15 +399,9 @@ div.more-info{
 
 }
 
-@media screen /* iPhone 6 kill me */
-  and (min-device-width: 320px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  {
-
-/* Type */
-
-  	body {
+@media only screen /* a lil smaller */
+	and (max-device-width : 568px) {
+	body {/* pump up the size */
   		font-size: 4.5vw;
   	}
 
@@ -428,8 +415,6 @@ div.more-info{
   		display: block;
   	} ul.media {
   		width: 22vw; /* column adjustment */
-  	}
-  	.top { /* scroll top button */
   	}
 
   	/* Single-Column Work */
@@ -455,15 +440,10 @@ div.more-info{
 
 }
 
-@media screen /* iPhone 6+ kill me */
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  {
+@media only screen /* gotta catch em all */
+	and (max-device-width : 667px) {
 
-/* Type */
-
-  	body {
+	body {/* pump up the size */
   		font-size: 4.5vw;
   	}
 
@@ -478,7 +458,46 @@ div.more-info{
   	} ul.media {
   		width: 22vw; /* column adjustment */
   	}
-  	.top { /* scroll top button */
+
+  	/* Single-Column Work */
+  	.work {
+  		margin-top: 5vw; /* space now occupied by
+  							.mobile-info */
+  	}
+	.work article { /* grid of images */
+		float: inherit;
+	    width: 90vw;
+	    margin: 2vw;
+	    padding: 1vw;
+	} 
+
+	/* Caption */
+
+	.caption {
+		padding: 2em;
+		width: 71vw;
+		left: 5vw;
+		max-height: 71vh;
+	}
+
+}
+@media only screen /* biggest */
+	and (max-device-width: 768px) {
+
+	body {/* pump up the size */
+  		font-size: 4.5vw;
+  	}
+
+  	.postit { /* bye post-its */
+  		display: none;
+  	} .more-info { /* bye info button */
+  		display: none;
+  	} 
+
+  	.mobile-info { /* display intro info */
+  		display: block;
+  	} ul.media {
+  		width: 22vw; /* column adjustment */
   	}
 
   	/* Single-Column Work */
@@ -504,56 +523,8 @@ div.more-info{
 
 }
 
-@media screen /* other stuff */
-  and (min-device-width: 320px)
-  and (max-device-width: 640px)
-  {
-
-  	/* Type */
-
-  	body {
-  		font-size: 4.5vw;
-  	}
-
-  	.postit { /* bye post-its */
-  		display: none;
-  	} .more-info { /* bye info button */
-  		display: none;
-  	} 
-
-  	.mobile-info { /* display intro info */
-  		display: block;
-  	} ul.media {
-  		width: 22vw; /* column adjustment */
-  	}
-  	.top { /* scroll top button */
-  	}
-
-  	/* Single-Column Work */
-  	.work {
-  		margin-top: 5vw; /* space now occupied by
-  							.mobile-info */
-  	}
-	.work article { /* grid of images */
-		float: inherit;
-	    width: 90vw;
-	    margin: 2vw;
-	    padding: 1vw;
-	} 
-
-	/* Caption */
-
-	.caption {
-		padding: 2em;
-		width: 71vw;
-		left: 5vw;
-		max-height: 71vh;
-	}
-
-}
-
-@media (max-width: 750px)
-	/* for testing ideally */
+@media only screen /* small desktop */
+	and (max-width: 768px)
   {
 
   	/* Type */
