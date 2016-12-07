@@ -16,8 +16,8 @@
 			var scrollTop = $(document).scrollTop();
 			var work = $(".work").offset().top;
 			//use css media query to check
-			var width == $('.mobile-info').is(':visible');
-			
+			var width = $('.mobile-info').is(':visible');
+			// if the scroll position is below the beginning of the work and we're on mobile
 			if ((scrollTop > work) && (width == true)) {
 				$(".top").fadeIn(400);
 				console.log('Hi');

@@ -558,15 +558,14 @@ div.more-info{
 
 }
 
-@media screen /* testing for desktop 
-				 and whatever else */
-  and (max-width: 750)
+@media (max-width: 750px)
+	/* for testing ideally */
   {
 
   	/* Type */
 
   	body {
-  		font-size: 3.75vw;
+  		font-size: 4.5vw;
   	}
 
   	.postit { /* bye post-its */
@@ -599,7 +598,7 @@ div.more-info{
 
 	.caption {
 		padding: 2em;
-		width: 75vw;
+		width: 71vw;
 		left: 5vw;
 		max-height: 71vh;
 	}
