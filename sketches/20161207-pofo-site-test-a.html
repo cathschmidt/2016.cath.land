@@ -14,7 +14,8 @@
 		//scroll-top button for mobile 
 		$(document).scroll(function(){
 			var scrollTop = $(document).scrollTop();
-			var work = $(".work").offset().top;
+			//var work = $(".work").offset().top - 30;
+			var work = 15;
 			//use css media query to check
 			var width = $('.mobile-info').is(':visible');
 			// if the scroll position is below the beginning of the work and we're on mobile
